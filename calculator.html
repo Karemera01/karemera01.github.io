@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+<script>
+    function add(){
+        let result;
+        let num1=parseFloat(document.getElementById("fValue").value);
+        let num2=parseFloat(document.getElementById("sValue").value);
+         result=num1+num2;
+        document.getElementById("result").innerHTML=result;
+    }
+    function sub(){
+        let num1=parseFloat(document.getElementById("fValue").value);
+        let num2=parseFloat(document.getElementById("sValue").value);
+        let result=num1-num2;
+        document.getElementById("result").innerHTML=result;
+    }
+    function mul(){
+        let num1=parseFloat(document.getElementById("fValue").value);
+        let num2=parseFloat(document.getElementById("sValue").value);
+        let result=num1*num2;
+        document.getElementById("result").innerHTML=result;
+    }
+    function div(){
+        let num1=parseFloat(document.getElementById("fValue").value);
+        let num2=parseFloat(document.getElementById("sValue").value);
+        let result=num1/num2;
+        document.getElementById("result").innerHTML=result.toFixed(4)
+    }
+    function clearInput(){
+        document.getElementById("fValue").value= "";
+        document.getElementById("sValue").value="";
+        document.getElementById("result").innerHTML="";
+    }
+</script>
+</head>
+<body>
+    <div id="input">
+        <div id="Gerard">
+            <h1>Simple calculator</h1>
+        </div>
+        <div id="paramete">
+            <p id="fLabel"> First Value <input type="text" id="fValue"></p>
+           
+        <p id="sLabel">Second Value <input type="text" id="sValue"></p>
+            
+        </div>
+     <div id="calcu"> 
+        <sub id="operation">Operator </sub> 
+         <div id="operator">
+            <button id="plus" onclick="add()">+</button> 
+            <button id="minus" onclick="sub()">-</button>  
+            <button id="mul" onclick="mul()">x</button> 
+            <button id="division" onclick="div()">/</button> 
+            <button id="clear" onclick="clearInput()">clear</button> 
+         </div>
+
+     </div>
+     <div>
+         <p id="resultId"> Result: <p id="result"></p></p>
+           
+     </div>
+
+   <div>
+
+   </div>
+    </div>
+</body>
+</html>
