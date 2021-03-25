@@ -4,13 +4,31 @@
 module.exports = { Accumulator, Calculator }; //add all of your function names here that you need for the node mocha tests
 
 /**
+ * @param {number} initialValue;
+ * @param {number} increment;
  * 
  * @returns {Accumulator} constructor function
  */
-function Accumulator(){
+   function Accumulator(initialValue,increment){
+      this.initialValue=initialValue;
+      this.currentValue=initialValue;
+      this.increment=increment;
+      this.accumulate=function(){
+          return this.currentValue+=this.increment;
+      };
+      this.report=function(){
+         return this.currentValue;
+      };
+  }
+//   let acc=new Accumulator(5,10);
+//   console.log(acc.initialValue);
+//   console.log(acc.increment);
+//   console.log(acc.currentValue);
+//   console.log(acc.accumulate());
+//   console.log(acc.report());
 //implement this
 
-}
+
 
 /**
  * @param {number} value1;
@@ -34,30 +52,13 @@ function Accumulator(){
    
 
 
-    //implement this
+  
    
 
 
      }
-let calc=new Calculator(5,10);
-calc.sum();
-calc.mult();
-//      let calculator = {
-//       value1: 0,
-//       value2: 0,
-//     getValues: function(operand1, operand2){
-//         this.value1 = operand1;
-//         this.value2 = operand2;
-//     },
-//     sum: function(){
-//         const tot = this.value1 + this.value2;
-//         return tot;
-//     },
-//     mul: function(){}
-//   };
-  
-//   calculator.getValues(5, 10);
-//   console.log( "expect 15 : ", calculator.sum() ); 
-//   console.log("expect 50 : ", calculator.mul() );
+// let calc=new Calculator(5,10);
+// calc.sum();
+// calc.mult();
 
  module.exports={Accumulator,Calculator};

@@ -25,8 +25,29 @@
 // console.log(calc.value1);
 
 function Accumulator(initialValue,increment){
-    this.
+    this.initialValue=initialValue;
+    this.currentValue=initialValue;
+    this.increment=increment;
+    this.accumulate=function(){
+        return this.currentValue+=this.increment;
+    };
+    this.report=function(){
+       return this.currentValue;
+    };
 }
+let acc=new Accumulator(5,10);
+console.log(acc.initialValue);
+console.log(acc.increment);
+console.log(acc.currentValue);
+console.log(acc.accumulate());
+console.log(acc.report());
+
+
+
+
+
+
+
 
 
 
