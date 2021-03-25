@@ -12,30 +12,30 @@ let library = [
  * Event handler to display library titles sorted alphabetically
  * @returns {undefined}
  */
-// function findTitles() {
+function showTitles() {
 
-//     /* put all titles into an array, then sort, then join with newline and insert in textarea innerHTML */
+    /* put all titles into an array, then sort, then join with newline and insert in textarea innerHTML */
 
-//     const titles = findTitles();
+    const titles = findTitles();
 
-//     /*need to sort and then join the titles still (e.g., someArray.join("\n")  */
-//     titles.sort();
-//     const titleString = titles.join("\n");
+    /*need to sort and then join the titles still (e.g., someArray.join("\n")  */
+    titles.sort();
+    const titleString = titles.join("\n");
 
-//     let textArea = document.getElementById("displayArea");
-//     textArea.innerHTML = titleString;
-// }
+    let textArea = document.getElementById("displayArea");
+    textArea.innerHTML = titleString;
+}
 
 /**
  * @returns {undefined}
  */
-// function addBrowserBook() {
-//     const authorTxtbox = document.getElementById("title");
-//     const author = authorTxtbox.value;
-//     const newBrowserBook = { author: author, title: "foo", id: "123" };
-//     addBook(newBrowserBook);
-//     return;
-// }
+function addBrowserBook() {
+    const authorTxtbox = document.getElementById("title");
+    const author = authorTxtbox.value;
+    let newBrowserBook = { author: author, title: "foo", id: "123" };
+    addBook(newBrowserBook);
+    return;
+}
 
 /**
  * 
@@ -50,6 +50,7 @@ function findTitles() {
     // titles = ["Mockingjay: The Final Book of The Hunger Games", "The Road Ahead", "Walter Isaacson"];  //FIX THIS!!
     // implement this and other functions
     return titles;
+    
 }
 
 /**
@@ -79,26 +80,27 @@ function findIDs() {
 /**{
  * 
  * @param {Object} book with author title and id
- * @returns {Object} the same book that added
+ * @returns {Object}  the same book that added
  */
-// function addBook(book) {
-//     library.push(book);
-//     return book;
+function addBook(book) {
+    library.push(book);
+    return book;
 
-// }
+  }
 /**
  * 
- * @param {string} author is book author
- * @param {string} title is book title
+ * @param {string} title is book author
+ * @param {string} author is book title
  * @param {string} bookId  is book title
  * @returns {Object} the new book
  */
-function addBook(author, title, bookId) {
+function createBook(title, author, bookId) {
     const newBook = {
-        author: author,
         title: title,
+        author: author,
         bookId: bookId
     };
     return newBook;
+   
 }
 module.exports = { findTitles, findAuthors, addBook, findIDs };
