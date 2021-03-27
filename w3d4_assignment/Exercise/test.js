@@ -42,8 +42,35 @@
 // console.log(acc.accumulate());
 // console.log(acc.report());
 
-let myInt = 555;
-myInt = false;
+// let myInt = 555;
+// myInt = false;
+
+// function filter(arr,a,b){
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]>=a&&arr[i]<=b){
+//             return true;
+//         }
+//     }
+//    return false;
+  
+   
+//         }
+
+
+
+// function filterRangeInPlace(arr,a,b) {
+    
+//    arr.filter(filter);
+    
+//         }
+        
+        
+// console.log(filterRangeInPlace([5, 3, 8, 1],1,4));
+
+const myArray=[1,4,5,8];
+
+let result=myArray.map(item=>Math.pow(item,2));
+console.log(result);
 
 
 
