@@ -1,28 +1,28 @@
 "use strict";
 
-function Calculator(value1,value2) {
+// function Calculator(value1,value2) {
    
-    this.value1=value1;
-    this.value2=value2;
-    this.getValues=function(){
-       return this.value1,this.value2;
-    };
-    this.sum=function(){
-       return this.value1+this.value2;
-    };
-    this.mult=function(){
-       return this.value1*this.value2;
-    };
+//     this.value1=value1;
+//     this.value2=value2;
+//     this.getValues=function(){
+//        return this.value1,this.value2;
+//     };
+//     this.sum=function(){
+//        return this.value1+this.value2;
+//     };
+//     this.mult=function(){
+//        return this.value1*this.value2;
+//     };
    
 
 
-    //implement this
+//     //implement this
    
-     }
-let calc=new Calculator(5,10);
-console.log(calc.sum());
-console.log(calc.mult());
-console.log(calc.value1);
+//      }
+// let calc=new Calculator(5,10);
+// console.log(calc.sum());
+// console.log(calc.mult());
+// console.log(calc.value1);
 
 // function Accumulator(initialValue,increment){
 //     this.initialValue=initialValue;
@@ -42,7 +42,8 @@ console.log(calc.value1);
 // console.log(acc.accumulate());
 // console.log(acc.report());
 
-
+let myInt = 555;
+myInt = false;
 
 
 
