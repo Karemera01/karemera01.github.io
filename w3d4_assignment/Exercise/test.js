@@ -67,10 +67,12 @@
         
 // console.log(filterRangeInPlace([5, 3, 8, 1],1,4));
 
-const myArray=[1,4,5,8];
+// const myArray=[1,4,5,8];
 
-let result=myArray.map(item=>Math.pow(item,2));
-console.log(result);
+// let result=myArray.map(item=>Math.pow(item,2));
+// console.log(result);
+const team=["Bob","Fred","Jim"];
+const [bob,fred,jim]=team;
 
 
 
