@@ -1,9 +1,9 @@
 "use strict";
 
-// let myObj={};
-// myObj.studentId=1010;
-// myObj.name="Gerard";
-// console.log(myObj);
+let myObj={};
+myObj.studentId=1010;
+myObj.name="Gerard";
+console.log(myObj);
 console.log("1______________________");
 
 let yourObj={"studentId":1010,

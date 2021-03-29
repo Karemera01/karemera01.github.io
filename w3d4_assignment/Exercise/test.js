@@ -71,9 +71,62 @@
 
 // let result=myArray.map(item=>Math.pow(item,2));
 // console.log(result);
-const team=["Bob","Fred","Jim"];
-const [bob,fred,jim]=team;
+// const team=["Bob","Fred","Jim"];
+// const [bob,fred,jim]=team;
 
+// let matrix=[[1,2,3],[4,5,6],[7,8,9]];
+// let sum=0;
+// // for(let i=0;i<matrix.length;i++){
+// //     for (let j=0;j<matrix.length;j++){
+// //         sum+=matrix[i][j];
+
+// //     }
+// // }
+// for ( let i of matrix){
+//     for(let j of i){
+//         sum+=j;
+//     }
+// }
+// console.log(sum);
+// let baz = "" + 33 + 10;
+// console.log(baz===3310);
+// const gradeReport = { s101: 3, s102: 2, s103: 3 };
+// function averageScore(gradeReport){
+//     let sum=0;
+//     let count=0;
+//     for(let grades in gradeReport){
+//         sum+=gradeReport[grades];
+//         count++;
+//     }
+//     let average=sum/count;
+//     return average;
+// }
+// console.log(averageScore(gradeReport));
+
+// function isEven(num) {
+    
+//         if (num % 2 === 0) {
+//             return true;
+//         } else
+//             return false;
+//     }
+
+
+
+// function filterEven(arr) {
+//    let result= arr.filter(isEven);
+//    return result;
+
+
+// }
+//  console.log(filterEven([5, 0, 7, 77, -20, 300, 51, 2]));
+
+function doubleAges(arr) {
+    return arr.map(item=>item.age*2);
+
+}
+
+console.log(doubleAges[{ name: "Sam", age: 15 }, { name: "William", age: 6 }, { name: "Lucy", age: 13 }, { name: "Barney", age: 80 }]);
 
 
 
