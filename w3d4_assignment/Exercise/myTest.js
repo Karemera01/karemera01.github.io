@@ -14,7 +14,7 @@ let yourObj={"studentId":1010,
 
     }
 };
-console.log(yourObj.address);
+console.log(yourObj.address.);
 console.log("2_________________________________");
 
 function CreateCompanyName(firstName,lastName,gender,position){
