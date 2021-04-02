@@ -1,19 +1,19 @@
 "use strict";
 
-const arr = [1,2,3,4,5];
+const arr = [1, 2, 3, 4, 5];
 /**
  * 
  * @param {Array} arr to be processed
  * @param {*} cbk to map the elements
  * @returns {Array} of mapped elements
  */
-function myMap(arr, cbk){
-//IMPLEMENTATION NEEDED
-let newArray=[];
-for(let i=0;i<arr.length;i++){
-    newArray.push(cbk(arr[i]));
-}
-return newArray;
+function myMap(arr, cbk) {
+    //IMPLEMENTATION NEEDED
+    let newArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        newArray.push(cbk(arr[i], i, arr));
+    }
+    return newArray;
 }
 
 
@@ -35,13 +35,13 @@ console.log("expect [4, 16, 36, 64, 100] ", myMap(arr, squareFun));
  * go through the array, call cbk with accumulator and element
  * return value of cbk becomes accumulator for next loop
  */
-function myReduce(arr, cbk, initialVal){
-    let accumulator=initialVal;
-    for(let element of arr){
-       accumulator=cbk(accumulator,element);
+function myReduce(arr, cbk, initialVal) {
+    let accumulator = initialVal;
+    for (let element of arr) {
+        accumulator = cbk(accumulator, element);
     }
     return accumulator;
-//IMPLEMENTATION NEEDED
+    //IMPLEMENTATION NEEDED
 }
 
 const sumFun = (accum, val) => accum + val;
@@ -67,4 +67,32 @@ function countLetters(str, letters) {
 
     }
 }
-console.log("expect 2",countLetters("abcabceoooeeeiii,","b"));
+console.log("expect 2", countLetters("abcabceoooeeeiii,", "b"));
+
+function myFilter(arr, cbk) {
+    let newArray = [];
+    for (let num of arr){
+         if (cbk(num)) {
+           newArray.push(num);
+        }
+    }
+
+    return newArray;
+}
+const evenFun = (num) => num%2;
+const oddFun = (num) => !(num%2);
+console.log("expect [1,3,5] ", arr.filter(evenFun));
+console.log("expect [1,3,5] ", myFilter(arr,evenFun));
+
+console.log("expect [2,4] ", arr.filter(oddFun));
+console.log("expect [2,4] ", myFilter(arr, oddFun));
+
+function myFind(arr,cbk){
+    for(let i=0;i<arr.length;i++){
+        if(cbk(arr[i])){
+            return i;
+        }else{
+            return -1;
+        }
+    }
+}

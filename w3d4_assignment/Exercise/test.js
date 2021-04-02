@@ -213,10 +213,28 @@
 // console.log(rectangle.computeArea(5,4));
 // console.log(rectangle.computeCirc(5,4));
 
-function myArray(){
-    console.log(this);
+// function foo(a,b){
+//     console.log(a);
+//     console.log(b);
+
+// }
+// foo(1);
+// const a=5;
+// const b=6;
+// foo();
+// foo(1,2,3,4);
+function foo(a,b,c){
+    let sum=a+b+c;
+    return sum;
+
 }
-const a=
+console.log(foo(1,2,3));
+
+
+
+
+  
+
 
 
 
