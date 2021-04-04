@@ -1,19 +1,18 @@
 "use strict";
 
-// function makeCount(){
-//     let count=0;
-//     function increment(){
-//         return count++;
-//     }
-//     return increment;
-// }
+function makeCount(){
+    let count=0;
+    function increment(){
+        return count++;
+    }
+    return increment;
+}
 
-// let count1=makeCount();
-// let count2=makeCount();
-// let count3=makeCount();
-// console.log(count1());
-// console.log(count1());
-// console.log(count1());
+let count1=makeCount();
+
+console.log(count1());
+console.log(count1());
+console.log(count1());
 
 // function inBetween(arr) {
     
@@ -41,8 +40,8 @@ function byField(fieldName) {
     return sorting;
    
     }
-    function sum(a,b,c){
-        let tot=a+b+c;
-        return tot;
-    }
-    let sum=(a,b,c)=>a+b+c;
+    // function sum(a,b,c){
+    //     let tot=a+b+c;
+    //     return tot;
+    // }
+    // let sum=(a,b,c)=>a+b+c;
