@@ -23,8 +23,8 @@ function myMap(arr, cbk) {
 const dblFun = (num, index) => index + ": " + (num * 2);
 const squareFun = num => num * num;
 
-console.log("expect [2, 4, 6,8,10] ", arr.map(dblFun));
-console.log("expect [2, 4, 6,8,10] ", myMap(arr, dblFun));
+//console.log("expect [2, 4, 6,8,10] ", arr.map(dblFun));
+//console.log("expect [2, 4, 6,8,10] ", myMap(arr, dblFun));
 
 console.log("expect [1, 4, 9, 16, 25] ", arr.map(squareFun));
 console.log("expect [1, 4, 9, 16, 25] ", myMap(arr, squareFun));

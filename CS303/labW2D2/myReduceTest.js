@@ -20,7 +20,7 @@ const myFilter = myExports.myFilter;
 describe("map elements tests", function () {
     it("tests double the elements", function () {
         const dblFun = (num, index) => index + ": " + (num * 2);
-        const arr=[]
+        const arr=[];
 
         assert.Equal("expect [2, 4, 6,8,10] ", arr.map(dblFun));
         assert.Equal("expect [2, 4, 6,8,10] ", myMap(arr, dblFun));
