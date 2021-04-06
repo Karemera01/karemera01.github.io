@@ -223,12 +223,20 @@
 // const b=6;
 // foo();
 // foo(1,2,3,4);
-function foo(a,b,c){
-    let sum=a+b+c;
-    return sum;
+// function foo(a,b,c){
+//     let sum=a+b+c;
+//     return sum;
 
+// }
+// console.log(foo(1,2,3));
+let phrase = "Hello";
+if (true) {
+  let user = "John";
+  function sayHi() {
+   console.log(`${phrase}, ${user}`);
+  }
 }
-console.log(foo(1,2,3));
+sayHi();
 
 
 
