@@ -87,12 +87,12 @@ console.log("expect [1,3,5] ", myFilter(arr,evenFun));
 console.log("expect [2,4] ", arr.filter(oddFun));
 console.log("expect [2,4] ", myFilter(arr, oddFun));
 
-// function myFind(arr,cbk){
-//     for(let i=0;i<arr.length;i++){
-//         if(cbk(arr[i])){
-//             return i;
-//         }else{
-//             return -1;
-//         }
-//     }
-// }
+function myFind(arr,cbk){
+    for(let i=0;i<arr.length;i++){
+        if(cbk(arr[i])){
+            return i;
+        }else{
+            return -1;
+        }
+    }
+}

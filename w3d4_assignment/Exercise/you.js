@@ -95,6 +95,22 @@
 // return newArray;
 // }
 // console.log(myMap([1,2,3]));
-let arr=[1,2,3];
- let result=arr.map(num=>num*2);
- console.log(result);
+// let arr=[1,2,3];
+//  let result=arr.map(num=>num*2);
+//  console.log(result);
+
+// function foo(a,b){
+//     console.log(a);
+//     console.log(b);
+
+// }
+// foo(1);
+// const a=5;
+// const b=5;
+// foo();
+// foo(1,2,3,4);
+
+function foo2(a,b,c){
+    let sum=a+b+c;
+}
+console.log(foo2(1,2,3));
