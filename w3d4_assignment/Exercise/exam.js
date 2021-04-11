@@ -38,18 +38,26 @@
 //     };
 //     abc.greet(); //Hello Hello ???
     
-    const abc = {
-        salute: "",
-        greet: function() {
-        const self = this;
-        self.salute = "Hello";
-        console.log(self.salute); //Hello
-        const setFrench = function(newSalute) { //inner function
-        self.salute = newSalute;
+    // const abc = {
+    //     salute: "",
+    //     greet: function() {
+    //     const self = this;
+    //     self.salute = "Hello";
+    //     console.log(self.salute); //Hello
+    //     const setFrench = function(newSalute) { //inner function
+    //     self.salute = newSalute;
        
-        };
-        setFrench("Bonjour");
-        console.log(self.salute); //Bonjour
-        }
-        };
-        abc.greet();
+    //     };
+    //     setFrench("Bonjour");
+    //     console.log(self.salute); //Bonjour
+    //     }
+    //     };
+    //     abc.greet();
+
+
+    let animal = {eats: true }; //using [ ] for curly brackets due to Sakai issue
+function Dog(name) {this.name = name;}   //using [ ] for curly brackets due to Sakai issue
+Dog.prototype = animal;
+ 
+let snoopy = new Dog("Snoopy");
+console.log( snoopy.eats ); // true  

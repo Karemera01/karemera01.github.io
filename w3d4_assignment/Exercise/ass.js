@@ -15,21 +15,8 @@
 
 
 let Bicycle=function(gear,speed){
-    Bicycle.prototype.gear=gear;
-Bicycle.prototype.speed=speed;
-
-Bicycle.prototype.applyBrake=function(decrement){
-    this.decrement=decrement;
-    return this.speed-=this.decrement;
-};
-Bicycle.prototype.speedUp=function(increment){
-    this.increment=increment;
-    return this.speed+=this.increment;
-};
-
- };
-// Bicycle.prototype.gear=3;
-// Bicycle.prototype.speed=2;
+//     Bicycle.prototype.gear=gear;
+// Bicycle.prototype.speed=speed;
 
 // Bicycle.prototype.applyBrake=function(decrement){
 //     this.decrement=decrement;
@@ -39,6 +26,21 @@ Bicycle.prototype.speedUp=function(increment){
 //     this.increment=increment;
 //     return this.speed+=this.increment;
 // };
+
+ };
+ let mountainb=new Bicycle(3,2);
+ let mountainc=new  Bicycle(1,0);
+
+
+
+Bicycle.prototype.applyBrake=function(decrement){
+    this.decrement=decrement;
+    return this.speed-=this.decrement;
+};
+Bicycle.prototype.speedUp=function(increment){
+    this.increment=increment;
+    return this.speed+=this.increment;
+};
 
 let MountainBike=function(seatHeight){
    this.seatHeight=seatHeight;
@@ -62,16 +64,16 @@ this.setHeight=function(newValue){
 // };
 
 
- MountainBike.__proto__=Bicycle;
+//  MountainBike.__proto__=Bicycle;
 
 
 
- let mountainBike  = new Bicycle(3,2);
-mountainBike.speedUp(100);
-  mountainBike.applyBrake(10);
- //console.log(mountainBike.gear);
- console.log(mountainBike.speed);
- console.log(mountainBike.gear);
+//  let mountainBike  = new Bicycle(3,2);
+// mountainBike.speedUp(100);
+//   mountainBike.applyBrake(10);
+//  //console.log(mountainBike.gear);
+//  console.log(mountainBike.speed);
+//  console.log(mountainBike.gear);
 
 
         // assert.strictEqual(mountainBike.speed, 92);
@@ -80,3 +82,7 @@ mountainBike.speedUp(100);
 
 // let mountainBike2=new MountainBike();
 // console.log(mountainBike2.setHeight(4));
+
+
+//To check
+
